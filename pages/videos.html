@@ -18,7 +18,7 @@
   <div id="navbar"></div>
   <script>
     // Load the navbar.html content into the #navbar div using JavaScript
-    fetch("/components/navbar.html")
+    fetch("./components/navbar.html")
       .then((response) => response.text())
       .then((data) => {
         document.getElementById("navbar").innerHTML = data;
@@ -62,11 +62,11 @@
     const videos = [
       {
         title: "Bowling Basics",
-        url: "/assets/videos/bowling_basics.mp4"
+        url: "./assets/videos/bowling_basics.mp4"
       },
       {
         title: "Advanced Techniques",
-        url: "/assets/videos/advanced_techniques.mp4"
+        url: "./assets/videos/advanced_techniques.mp4"
       }
     ];
 
